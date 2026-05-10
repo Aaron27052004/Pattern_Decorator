@@ -4,9 +4,9 @@ public class MyCenterDecorator extends MyShapeDecorator{
     private int crossRadius;
     private Color crossColor;
 
-    public MyCenterDecorator(int rayon , Color color, MyShape shape){
+    public MyCenterDecorator(int radius , Color color, MyShape shape){
         super(shape);
-        this.crossRadius=rayon;
+        this.crossRadius=radius;
         this.crossColor=color;
     }
 
