@@ -8,7 +8,8 @@ public abstract class MyShapeDecorator implements MyShape{
     }
 
     public void draw(Graphics graphics){
-       drawDecoration(graphics);
+        decorated.draw(graphics);
+        drawDecoration(graphics);
     }
 
     public int getNumberOfPoint(){

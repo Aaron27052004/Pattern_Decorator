@@ -11,7 +11,6 @@ public class MyCenterDecorator extends MyShapeDecorator{
     }
 
     public void drawDecoration(Graphics g){
-        decorated.draw(g);
         g.setColor(crossColor);
 
         int sumx=0;
@@ -23,8 +22,6 @@ public class MyCenterDecorator extends MyShapeDecorator{
         int xbari=sumx/decorated.getNumberOfPoint();
         int ybari=sumy/decorated.getNumberOfPoint();
 
-        
-        
         g.drawLine(xbari - crossRadius ,ybari  , xbari + crossRadius ,ybari );
         g.drawLine(xbari  ,ybari - crossRadius , xbari ,ybari +crossRadius);
     }
