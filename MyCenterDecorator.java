@@ -10,7 +10,7 @@ public class MyCenterDecorator extends MyShapeDecorator{
         this.crossColor=color;
     }
 
-    public void drawDecoration(Graphics g){
+    protected void drawDecoration(Graphics g){
         g.setColor(crossColor);
 
         int sumx=0;
