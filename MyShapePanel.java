@@ -3,21 +3,21 @@ import java.awt.*;
 
 
 public class MyShapePanel extends  javax.swing.JPanel{
-    private ArrayList<MyShape> shape;
+    private ArrayList<MyShape> shapes;
 
     public MyShapePanel(){
-        this.shape = new ArrayList<MyShape>();
+        this.shapes = new ArrayList<MyShape>();
         this.setPreferredSize(new Dimension(500, 400));
     }
 
     public void paintComponent(Graphics graphics){
         super.paintComponent(graphics);
-        for( MyShape shape : shape){
+        for( MyShape shape : shapes){
             shape.draw(graphics);
         }
     }
 
     public void add(MyShape shape){
-        this.shape.add(shape);
+        this.shapes.add(shape);
     }
 }

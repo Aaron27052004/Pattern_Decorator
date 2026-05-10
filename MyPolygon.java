@@ -12,19 +12,19 @@ public class MyPolygon implements MyShape{
     }
 
     public void draw(Graphics graphics){
-        int[] xpoints = new int[getNumberOfPoint()]; 
-        int[] ypoints = new int[getNumberOfPoint()];
+        int[] xpoints = new int[getNumberOfPoints()]; 
+        int[] ypoints = new int[getNumberOfPoints()];
 
-        for(int i =0; i< getNumberOfPoint(); i++){
+        for(int i =0; i< getNumberOfPoints(); i++){
             xpoints[i]=getPoint(i).x;
             ypoints[i]=getPoint(i).y;
         }
 
         graphics.setColor(fillColor);
-        graphics.fillPolygon(xpoints, ypoints, getNumberOfPoint());
+        graphics.fillPolygon(xpoints, ypoints, getNumberOfPoints());
     }
 
-    public int getNumberOfPoint(){
+    public int getNumberOfPoints(){
         return points.size();
     }
 

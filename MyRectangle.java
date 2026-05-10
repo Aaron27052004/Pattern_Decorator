@@ -12,17 +12,17 @@ public class MyRectangle implements MyShape{
     }
 
     public void draw(Graphics graphics){
-        int bottomleftx=Math.min(point0.x, point1.x);
-        int bottomlefty=Math.min(point0.y, point1.y);
+        int topLeftX=Math.min(point0.x, point1.x);
+        int topLeftY=Math.min(point0.y, point1.y);
 
         int width=Math.abs(point0.x - point1.x);
         int height=Math.abs(point0.y - point1.y);
 
         graphics.setColor(fillColor);
-        graphics.fillRect(bottomleftx, bottomlefty ,width, height);
+        graphics.fillRect(topLeftX, topLeftY ,width, height);
     }
 
-    public int getNumberOfPoint(){
+    public int getNumberOfPoints(){
         return 2;
     }
 

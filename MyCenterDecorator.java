@@ -15,12 +15,12 @@ public class MyCenterDecorator extends MyShapeDecorator{
 
         int sumx=0;
         int sumy=0;
-        for(int i =0; i< decorated.getNumberOfPoint(); i++){
+        for(int i =0; i< decorated.getNumberOfPoints(); i++){
             sumx+=decorated.getPoint(i).x;
             sumy+=decorated.getPoint(i).y;
         }
-        int xbari=sumx/decorated.getNumberOfPoint();
-        int ybari=sumy/decorated.getNumberOfPoint();
+        int xbari=sumx/decorated.getNumberOfPoints();
+        int ybari=sumy/decorated.getNumberOfPoints();
 
         g.drawLine(xbari - crossRadius ,ybari  , xbari + crossRadius ,ybari );
         g.drawLine(xbari  ,ybari - crossRadius , xbari ,ybari +crossRadius);

@@ -12,8 +12,8 @@ public abstract class MyShapeDecorator implements MyShape{
         drawDecoration(graphics);
     }
 
-    public int getNumberOfPoint(){
-        return decorated.getNumberOfPoint();
+    public int getNumberOfPoints(){
+        return decorated.getNumberOfPoints();
     }
 
     public Point getPoint(int index){
