@@ -12,8 +12,14 @@ public class MyBorderDecorator extends MyShapeDecorator{
 
     protected void drawDecoration(Graphics g){
         g.setColor(vertexColor);
+        int width=2*vertexRadius;
+        int height=2*vertexRadius;
+
         for(int i=0;i<decorated.getNumberOfPoints();i++){
-            g.fillOval(decorated.getPoint(i).x - vertexRadius/2 ,decorated.getPoint(i).y - vertexRadius/2 ,vertexRadius,vertexRadius);    
+            int topLeftX=decorated.getPoint(i).x - vertexRadius;
+            int topLeftY=decorated.getPoint(i).y - vertexRadius;
+
+            g.fillOval(topLeftX,topLeftY,width,height);    
         }
     }
 }
