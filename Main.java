@@ -24,8 +24,7 @@ public class Main{
                                         new Point(200, 120), new Point(100, 100),
                                             new Point( 50, 150) )));
         
-        MyShape point = new MyBorderDecorator(50, Color.black ,new MyPolygon(Color.black,new Point (100,100)));
-        panel.add(shape0); panel.add(shape1); panel.add(shape2); panel.add(point);
+        panel.add(shape0); panel.add(shape1); panel.add(shape2);
     }
 
     public static void main(String args[]) {
